@@ -9,6 +9,5 @@ module.exports = async (req, res) => {
 
   const opts = { fit: 'box', width: 40, height: 40 }
   const asciified = await asciify(avatarUrl, opts)
-
   return res.status(200).send(asciified)
 }
